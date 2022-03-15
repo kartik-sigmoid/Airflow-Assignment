@@ -3,7 +3,7 @@
 #### Problem statement: [Link](https://docs.google.com/document/d/1sRCD29lveSCLB2to1OX1EVgcjXg2VRWaXUx5gGeDizA/edit)
 
 1. Graph view of DAG:
-<img width="519" alt="image" src="https://user-images.githubusercontent.com/98140311/158321483-fdd495b5-9aa0-4f10-b1ca-1f9b8006ecb6.png">
+<img width="632" alt="image" src="https://user-images.githubusercontent.com/98140311/158330817-ed61fa60-85ff-4ff1-9862-28211a5dcaed.png">
 
 2. Data fetching and adding to pandas dataframe with creation of table in postgres database:
 <img width="745" alt="image" src="https://user-images.githubusercontent.com/98140311/158321688-57c71928-4e78-40f4-bd8a-a1050c2694bc.png">
