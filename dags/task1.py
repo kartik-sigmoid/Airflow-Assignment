@@ -3,11 +3,11 @@ import datetime
 import csv
 
 
-def write_csv():
+def csv_creation():
     url = "https://community-open-weather-map.p.rapidapi.com/weather"
     headers = {
         'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
-        'x-rapidapi-key': "6de699b1d8mshd8bd55d7354877cp1e4523jsn27d1f547437f"
+        'x-rapidapi-key': "a40aecd837msh1116406c3fc9763p1d7e64jsn8be3a321683f"
         }
 
     cities = ["Vadodara","Agra","Ranchi","Goa","Mumbai","Jaipur","Gandhinagar","Pune","Hyderabad","Surat"]
@@ -18,7 +18,7 @@ def write_csv():
         querystring = {"q":f"{city},india","lat":"0","lon":"0","id":"2172797","lang":"null","units":"imperial","mode":"JSON"}
         response = requests.request("GET", url, headers=headers, params=querystring)
         data = response.json()
-        # print(data)
+        print(data)
         list_item = [data["name"],data["weather"][0]["description"],data["main"]["temp"], data["main"]["feels_like"],
                      data["main"]["temp_min"], data["main"]["temp_max"], data["main"]["humidity"], data["clouds"]["all"] ]
 
@@ -33,10 +33,3 @@ def write_csv():
         print("Done Successfully")
     except:
         print("connection error...")
-
-
-
-
-
-
-
